@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>DevOps 3.0 | Berlin DevOpsDays 2013</title>
+
+    <meta name="description" content="Where we are now and what we found out on the way">
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
+    <link href="css/basic-animations.css" rel="stylesheet" type="text/css" />
+    <link href="css/is24.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .right {text-align: right;}
+        .small {font-size: 80%;}
+        .service-up {color: #fff; background: #0A0; padding: 0 1em;}
+        .service-down {color: #fff; background: #A00; padding: 0 1em;}
+        .service-ignored {color: #fff; background: #DD0; padding: 0 1em;}
+        .fade *:not(.highlight) {opacity: .2;}
+        .highlight {opacity: 1; font-weight: bold;}
+    </style>
+
+    <script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jmpress.all.js"></script>
+
+</head>
+
+<body>
+
+<div id="jmpress">
+<article id="title" class="is24-slide slide step" data-x="-2000">
+    <object data="Gears.svg" type="image/svg+xml"
+    style="vertical-align: top;" width="200" height="200"></object>
+    <h1>DevOps 3.0</h1>
+    Where we are now and what we found out on the way
+
+    <!--
+    <article style="position: absolute; bottom: 50px;">
+    -->
+    <article>
+        <p style="height: 2em;"> </p>
+        Felix Sperling, Marcel Wolf
+        <br/>
+        <br/>
+        Berlin DOD 2013 | xx.05.2013
+    </article>
+</article>
+
+<article id="introduction" class="step" data-x="-3000">
+    <h1>Speakers</h1>
+
+    <h2>We Both</h2>
+    <ul>
+        <li>work for Immobilienscout24</li>
+        <li>text</li>
+    </ul>
+    <h2>Felix Sperling</h2>
+    <ul>
+        <li>some text</li>
+    </ul>
+
+    <h2>Marcel Wolf</h2>
+    <ul>
+        <li>some text</li>
+    </ul>
+
+</article>
+
+
+<article id="abstract" class="step" data-x="-4000">
+    <h1>IS24 facts</h1>
+    <ul>
+        <li>facts<span class="footnote"> really :-)</span></li>
+        <li>facts <b>bold</b> fiction</li>
+        <li><em>italic</em> facts</li>
+        <li>facts<span class="footnote"> really :-)</span></li>
+        <li>facts <b>bold</b> fiction</li>
+        <li><em>italic</em> facts</li>
+    </ul>
+</article>
+
+<article id="cld" class="step slide" data-x="-5000">
+    <h1>DevOps Reaction1</h1>
+    <q>"<b>la questions</b></q>
+    <div class="footnote" style="padding-top: 20%;" data-jmpress="fade">
+        answer
+    </div>
+</article>
+
+<article id="context" class="step" data-x="-5000" data-y="-1000">
+    <h1>headline1</h1>
+    <ul>
+    </ul>
+</article>
+
+<article class="step" data-x="-4000" data-y="-1000">
+    <h1>headline2</h1>
+    <article class="step" style="padding-top: 15%;" data-jmpress="fade">
+        <p class="small">Text?</p>
+    </article>
+    <article class="step" style="padding-top: 40%;" data-jmpress="fade">
+        <ul>
+        </ul>
+    </article>
+</article>
+
+<article id="configsvn" data-x="-3000" data-y="-1000" class="step slide">
+    <h1>headline3</h1>
+    <div class="footnote" style="padding-top: 10%;" data-jmpress="fade">
+        so far so good, lets see what it means
+    </div>
+</article>
+
+<article id="configsvn2" data-x="-2000" data-y="-1000" class="step slide">
+    <h1>config-SVN</h1>
+
+</article>
+
+<article id="configsvn3" data-x="-2000" data-y="-2000" class="step slide">
+        <pre class="small" data-jmpress="fade">
+            in a nutshell, the proxy.conf
+        </pre>
+        <pre class="small" data-jmpress="fade">
+            <b>all</b>/etc/proxy.conf:
+                proxy_port=3128
+                proxy_host=<b>@@@PROXY_HOST@@@</b>
+        </pre>
+</article>
+
+    <div id="yadtshellviewsleft" class="step" data-x="0" data-y="-2000" data-scale="4"
+        data-rotate-x="-90" data-rotate-y="90" data-rotate-z="90"
+        style="z-index: 2000;">
+        <div data-jmpress="fade after 1s step">
+            <h2>Only 15 Views left</h2>
+            Now comes the boring part, <br/>
+            at least if you are interested in subversion only.
+        </div>
+    </div>
+    <script>
+        $('#yadtshellviewsleft').bind("enterStep", function() {
+            agent.show();
+            agent.play("IdleSnooze");
+        });
+    </script>
+
+    <div id="yadtshell" data-x="-3000" data-y="-2000" class="step slide">
+        <h1>Some headline</h1>
+        <p>describtion</p>
+
+        <p>iam a tool</p>
+    </div>
+
+    <div id="thanks" class="step" data-scale="8"
+        data-x="0" data-y="3000" data-z="0"
+        data-rotate-x="-90" data-rotate-y="-180">
+        <div data-jmpress="fade after 1s step">
+            <h1 style="text-align: center;">
+                Thanks for your Attention.</h1>
+            <p class="right small" style="padding-top: 20%; line-height: 1.4em;">
+                http://www.immobilienscout24.de/<br/>
+                felix.sperling@immobilienscout24.de<br/>
+                marcel.wolf@immobilienscout24.de<br/>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	$('#jmpress .linebyline li').attr("data-jmpress", "appear after 500ms prev");
+	$('#jmpress').jmpress();
+});
+</script>
+
+<script type="text/javascript">
+    $('.step').bind("leaveStep", function() {
+        console.log("leaveStep");
+        if (! agent.hidden) {
+            agent.stop();
+            agent.hide(true);
+        }
+    });
+</script>
+
+
+</body>
+</html>
