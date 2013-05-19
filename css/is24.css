@@ -260,8 +260,8 @@ h4 {
 
 /** COMMON STEP STYLES **/
 .step, .nested-step {
-	width: 900px;
-	min-height: 50px;
+	width: 1000px;
+	min-height: 800px;
 	padding: 40px;
 	z-index: 2;
 
@@ -542,7 +542,7 @@ h4 {
 
 
 .is24-slide {
-    background: white url(is24.png) bottom right no-repeat;
+    background: url(is24.png) bottom right no-repeat;
     z-index: -1;
 } 
 
@@ -576,10 +576,29 @@ li ul li {
   padding: 0.5em
 }
 
+.footer {
+  position:absolute;
+  bottom: 2em;
+}
+
+.gearsbild {
+   z-index:-10; 
+   position:absolute;
+   right: 0px;
+   top: 0px; 
+   width: 70%;
+   opacity: 0.3;
+}
+
 .bild {
    z-index:-10; 
    position:absolute; 
-   top: -200px; 
-   left: -80px; 
+   top: 0px; 
+   left: 0px; 
    width: 100%;
+}
+
+
+article {
+   border: 1px solid #000;
 }
