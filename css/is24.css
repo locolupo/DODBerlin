@@ -49,6 +49,7 @@ body {
 	font-weight: normal;
 	pointer-events: none;
 	border-width: 0px !important;
+	background: #000;
 
 	-webkit-transform: translate3d(0,0,1px);
 	-moz-transform:    translate3d(0,0,1px);
@@ -264,6 +265,7 @@ h4 {
 	min-height: 800px;
 	padding: 40px;
 	z-index: 2;
+	background: #fff;
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -298,7 +300,8 @@ h4 {
 
 .step:not(.active):not(.nested-active) {
 	z-index: 1;
-	opacity: 0.3;
+	opacity: 0;
+	/*opacity: 0.3;*/
 }
 .step ul {
 	margin-left: 20px;
@@ -542,7 +545,7 @@ h4 {
 
 
 .is24-slide {
-    background: url(is24.png) bottom right no-repeat;
+    background: url(is24.png) bottom right no-repeat #fff;
     z-index: -1;
 } 
 
@@ -598,7 +601,7 @@ li ul li {
    width: 100%;
 }
 
-
+/*
 article {
    border: 1px solid #000;
-}
+}*/
