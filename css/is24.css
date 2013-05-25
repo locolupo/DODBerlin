@@ -615,3 +615,9 @@ article {
   right: 2em;
   padding: 0.5em  
 }
+
+.middle {
+  position:relative;
+  top:300px;
+  text-align:center;
+}
